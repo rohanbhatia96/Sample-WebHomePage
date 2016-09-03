@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"/>
+<title>Company Name</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css" type="text/css" media="all">
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+function cycleImages(){
+      var $active = $('.active');
+      var $next = ($active.next().length > 0) ? $active.next() : $('.slider_div img:first');
+	  $active.fadeOut(3000);
+	  $next.removeClass('inactive');
+	  $next.addClass('active');
+	  $next.fadeIn(3000);
+	  $active.removeClass('active')
+	  $active.addClass('inactive');
+    }
+
+$(document).ready(function(){
+// run every 7s
+setInterval('cycleImages()', 5000);
+})
+</script>
+
+</head>
+
+<body>
+	<header>
+		<h1><a href="#" id="logo"></a></h1>
+		<nav>
+			<ul id="menu">
+				<li class="current"><a href="Home.html">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+			<div class="slider_div">
+						<img class="active" src="Images\slide1.jpg">
+						<img class="inactive" src="Images\slide2.jpg">
+						<img class="inactive" src="Images\slide3.jpg">
+						<img class="inactive" src="Images\slide4.jpg">
+			</div>
+	<br>
+	<section>
+		<img src="Images\social.png"/>
+		<h1>Best Facilities</h1>
+		<p>Best shop in town. Best Facilities. Best shop in town. Best Facilities.</p>
+	</section>
+	<section>
+		<img src="Images\location.png"/>
+		<h1>Convenient Location</h1>
+		<p>Best shop in town. Easy to locate. Centre of the city</p>
+	</section>
+	<section>
+		<img src="Images\check.png"/>
+		<h1>Check us Out</h1>
+		<p>Best shop in town. Check us out for best offers</p>
+	</section>
+	<div class="clear"></div>
+	<article>
+		<img src="Images\sidephoto.jpg"/>
+	</article>
+	<aside>
+		<h2>Random Stuff</h2>
+		<ul class="random">
+			<li><h3>More things</li></h3>
+			<li><h3>More things</li></h3>
+			<li><h3>More things</li></h3>
+	</aside>
+	<div class="clear"></div>
+	<section>
+		<h1>Check us Out</h1>
+		<img src="Images\social.png"/>
+		<p>Best shop in town. Best Facilities. Best shop in town. Best Facilities.</p>
+	</section>
+	<section>
+		<h1>Check us Out</h1>
+		<img src="Images\location.png"/>
+		<p>Best shop in town. Easy to locate. Centre of the city</p>
+	</section>
+	<section>
+		<h1>Check us Out</h1>
+		<img src="Images\check.png"/>
+		<p>Best shop in town. Check us out for best offers</p>
+	</section>
+	
+	<footer>
+		<section class="foot">
+			<h2><b>Company Name</b></h2>
+			<p><b>Contact Number</b><br>
+			Address <br>
+			3 line Adress<br>
+			-----<br>
+			</p>
+		</section>
+		<section class="foot">
+			<h2><b>Connect With Us</b></h2>
+			<ul class="social">
+			<li><a href="#"><img src="Images\facebook1.png"/></a></li>
+			<li><a href="#"><img src="Images\twitter1.png"/></a></li>
+			<li><a href="#"><img src="Images\googleplus.png"/></a></li>
+			</ul>
+		</section>
+	</footer>
+</body>
+</html>
+ 
