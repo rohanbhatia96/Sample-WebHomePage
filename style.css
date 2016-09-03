@@ -1,0 +1,262 @@
+
+body{
+	
+	background-color: black;
+}
+header{	
+	height: 150px;
+	background:#990000;
+	width:100%;
+	margin: 0px;
+	top: 0px;
+	position:fixed;
+	left:0px;
+	z-index:100;
+	opacity:0.95;
+}
+nav{
+	
+	float:right;
+	padding:20px 0 10px 20px;
+}
+
+section{
+	
+	width:28%;
+	float:left;
+	margin: 2% 2%;
+	text-align:center;
+	color:white;
+}
+
+article{
+	float:left;
+	margin: 0 auto;
+	width: 42%;
+	height:auto;
+	padding:4%;
+	
+}
+aside{
+	float:right;
+	margin: 0 auto; 
+	width:35%;
+	height:auto;
+	padding:3%;
+	color:pink;
+}
+
+footer{
+	overflow: hidden;
+	background:#990000;
+	opacity:0.9;
+    width:100%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	
+}
+
+.slider_div{
+	
+	overflow:hidden;
+	background:white;
+	height:450px;
+	width:70%;
+	float:center;
+	margin-top:145px;
+	margin-left:15%;
+	margin-bottom:30px;
+	z-index:0;
+}
+
+.slider_div li{
+	
+}
+.clear{
+	
+	clear:both;
+}
+
+.foot{
+	
+	width:45%;
+	float:left;
+	text-align:center;
+	color:white;
+}
+
+.social{
+	float:left;
+	width:100%;
+	padding:10px 0 10px 0;
+	list-style:none;
+	text-align: center;
+	margin:0 auto;
+	
+	
+}
+.social li {
+	
+	display:inline;
+	/*margin-left:30px;*/	
+}
+
+#logo
+{
+		margin:10px;
+		float:left;
+		width:250px;
+		height:100px;
+		background:url("Images/logo2.jpg") no-repeat center;
+	
+}
+
+#menu{
+	float:right;
+}
+
+#menu li{
+	
+	float:left;
+	padding:10px 0 10px 20px;
+	list-style:none;
+	text-align: center;
+}
+#menu li a {
+	display:inline-block;
+	font-size:22px;
+	color:#CCD5B4;
+	text-decoration:none;
+	line-height:35px;
+	height:40px;
+	padding:2px 20px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	position:relative;
+}
+
+#menu li a:hover, #menu .current a {
+	background:url("Images/menu_texture.jpg");
+}
+
+
+
+
+
+
+.slider {
+    background-color: #fff;
+    box-shadow: inset 0 0 2px hsla(0,0%,0%,.2),
+                0 3px 1px hsla(0,0%,100%,.75),
+                0 -1px 1px 2px hsla(0,0%,0%,.1);
+    height: 250px;
+    left: 35%;
+	float:center;
+	margin-top:80px;
+    padding: .5em;
+    position: absolute;
+    width: 400px;
+	z-index:2;
+}
+.slider:before {
+    background-color: #22130c;
+    bottom: -2.5em;
+    box-shadow: inset 0 1px 1px 1px hsla(0,0%,100%,.2),
+                inset 0 -2px 1px hsla(0,0%,0%,.4),
+                0 5px 50px hsla(0,0%,0%,.25),
+                0 20px 20px -15px hsla(0,0%,0%,.2),
+                0 30px 20px -15px hsla(0,0%,0%,.15),
+                0 40px 20px -15px hsla(0,0%,0%,.1);
+    content: '';
+    left: -2.5em;
+    position: absolute;
+    right: -2.5em;
+    top: -2.5em;
+    z-index: -1;
+}
+.slider:after {
+    background-color: #fff5e5;
+    bottom: -1.5em;
+    box-shadow: 0 2px 1px hsla(0,0%,100%,.2),
+                0 -1px 1px 1px hsla(0,0%,0%,.4),
+                inset 0 2px 3px 1px hsla(0,0%,0%,.2),
+                inset 0 4px 3px 1px hsla(0,0%,0%,.2),
+                inset 0 6px 3px 1px hsla(0,0%,0%,.1);
+    content: '';
+    left: -1.5em;
+    position: absolute;
+    right: -1.5em;
+    top: -1.5em;
+    z-index: -1;
+}
+.slider li {
+    box-shadow: 0 -1px 0 2px hsla(0,0%,0%,.03);
+    list-style: none;
+    position: absolute;
+}
+.slider input {
+    display: none;
+}
+.slider label {
+    background-color: #111;
+    background-image: linear-gradient(transparent, hsla(0,0%,0%,.25));
+    border: .2em solid transparent;
+    bottom: .5em;
+    border-radius: 100%;
+    cursor: pointer;
+    display: block;
+    height: .5em;
+    left: 24em;
+    opacity: 0;
+    position: absolute;
+    transition: .25s;
+    width: .5em;
+    visibility: hidden;
+    z-index: 10;
+}
+.slider label:after {
+    border-radius: 100%;
+    bottom: -.2em;
+    box-shadow: inset 0 0 0 .2em #111,
+                inset 0 2px 2px #000,
+                0 1px 1px hsla(0,0%,100%,.25);
+    content: '';
+    left: -.2em;
+    position: absolute;
+    right: -.2em;
+    top: -.2em;
+}
+.slider:hover label {
+    opacity: 1;
+    visibility: visible;
+}
+.slider input:checked + label {
+    background-color: #fff;
+}
+.slider:hover li:nth-child(1) label {
+    left: .5em;
+}
+.slider:hover li:nth-child(2) label {
+    left: 2em;
+}
+.slider:hover li:nth-child(3) label {
+    left: 3.5em;
+}
+.slider:hover li:nth-child(4) label {
+    left: 5em;
+}
+.slider img {
+    height: 15em;
+    opacity: 0;
+    transition: .25s;
+    width: 25em;
+    vertical-align: top;
+    visibility: hidden;
+}
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
